@@ -36,6 +36,6 @@ public class LoginController {
             return ApiResultHandler.buildApiResult(200, "请求成功", studentRes);
         }
 
-        return ApiResultHandler.buildApiResult(400, "请求失败", null);
+        return ApiResultHandler.buildApiResult(400, "登录失败", null);
     }
 }
