@@ -29,17 +29,19 @@
     </div>
     <div class="content">
       <el-collapse v-model="activeName" >
-        <el-collapse-item class="header" name="0">
-          <template slot="title" class="stitle" >
+        <el-collapse-item class="header"  name="0">
+          <div class="stitle">
+          <template slot="title"  >
             <div class="title">
               <span>{{examData.source}}</span><i class="header-icon el-icon-info"></i>
               <span class="time">{{examData.totalScore}}分 / {{examData.totalTime}}分钟</span>
               <el-button type="primary" size="small">点击查看试题详情</el-button>
             </div>
           </template>
+          </div>
           <el-collapse class="inner">
-            <el-collapse-item>
-              <template slot="title" name="1">
+            <el-collapse-item name="1">
+              <template slot="title" >
                 <div class="titlei">选择题 (共{{topicCount[0]}}题 共计{{score[0]}}分)</div>
               </template>
               <div class="contenti">
@@ -48,8 +50,8 @@
                 </ul>
               </div>
             </el-collapse-item>
-            <el-collapse-item>
-              <template slot="title" name="2">
+            <el-collapse-item name="2">
+              <template slot="title" >
                 <div class="titlei">填空题 (共{{topicCount[1]}}题  共计{{score[1]}}分)</div>
               </template>
               <div class="contenti">
@@ -58,8 +60,8 @@
                 </ul>
               </div>
             </el-collapse-item>
-            <el-collapse-item>
-              <template slot="title" name="3">
+            <el-collapse-item name="3">
+              <template slot="title" >
                 <div class="titlei">判断题 (共{{topicCount[2]}}题 共计{{score[2]}}分)</div>
               </template>
               <div class="contenti">
