@@ -1,6 +1,9 @@
 package com.exam.entity;
 
+import lombok.Setter;
+
 public class Admin {
+    @Setter
     private Integer adminId;
 
     private String adminName;
@@ -19,10 +22,6 @@ public class Admin {
 
     public Integer getAdminId() {
         return adminId;
-    }
-
-    public void setAdminId(Integer adminId) {
-        this.adminId = adminId;
     }
 
     public String getAdminName() {

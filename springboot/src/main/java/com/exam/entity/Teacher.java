@@ -8,7 +8,7 @@ public class Teacher {
 
     private String teacherName;
 
-    private String institute;
+    private String institute;//学院
 
     private String sex;
 
@@ -18,9 +18,9 @@ public class Teacher {
 
     private String pwd;
 
-    private String cardId;
+    private String cardId;//身份证号
 
     private String type;
 
-    private String role;
+    private String role;//0管理员，1老师，2学生
 }

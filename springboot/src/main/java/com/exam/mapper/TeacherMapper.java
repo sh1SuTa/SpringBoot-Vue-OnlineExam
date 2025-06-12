@@ -25,7 +25,7 @@ public interface TeacherMapper {
     @Update("update teacher set teacherName = #{teacherName},sex = #{sex}," +
             "tel = #{tel}, email = #{email},pwd = #{pwd},cardId = #{cardId}," +
             "role = #{role},institute = #{institute},type = #{type} where teacherId = #{teacherId}")
-    public int update(Teacher teacher);
+    int update(Teacher teacher);
 
     @Options(useGeneratedKeys = true,keyProperty = "teacherId")
     @Insert("insert into teacher(teacherName,sex,tel,email,pwd,cardId,role,type,institute) " +
